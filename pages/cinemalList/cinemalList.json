@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "cinemal-item": "/components/cinemalItem/cinemalItem"
+  }
+}

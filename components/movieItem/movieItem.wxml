@@ -1,0 +1,26 @@
+<view class='movieItem' bindtap='getMovieDetail' data-movieid='{{item.id}}'>
+  <view class='left'>
+  <!--小程序里面，如果要实现图片响应式，不能设置高度auto，要设置 mode为widthFix -->
+    <image src='{{item.img}}' mode='widthFix'></image>
+  </view>
+  <view class='center'>
+    <view class='m_title'>{{item.nm}}
+      <view class='imax' wx:if="{{item.imax}}">IMAX</view>
+    </view>
+    <view>{{item.cat}}</view>
+    <view>{{item.star}}</view>
+    <view style='color:gray'>{{item.showInfo}}</view>
+  </view>
+  <view class='right'>
+    <block  wx:if="{{!item.preSale}}">
+      <view class='score'>{{item.sc}}分</view>
+      <view class='btnBuy'>购票</view>
+    </block>
+    <block wx:if="{{item.preSale}}">
+      <view class='score' style='font-size:20rpx'>{{item.wish}}想看</view>
+      <view class='btnPreSale' wx:if="{{item.preSale}}">预售</view>
+    </block>
+  </view>
+</view>
+
+<!--不支持片段代码 -->

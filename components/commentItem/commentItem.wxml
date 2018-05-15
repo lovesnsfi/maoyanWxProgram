@@ -1,0 +1,26 @@
+<view class='commentItem'>
+  <view class='top'>
+    <image wx:for="{{fullCount}}" class='startImg' src='/images/star-full-new.png' wx:key="idx" wx:for-index="idx"></image>
+    <image src='/images/star-half-new.png' class='startImg'  wx:if="{{half}}"></image>
+    <text style='color:gray;margin-left:5rpx'>{{commentItem.time}}</text>
+  </view>
+  <view class='center'>
+    {{commentItem.content}}
+  </view>
+  <view class='bottom'>
+    <view class='left'>
+      <image src='{{commentItem.avatarurl==""?"/images/normal.png":commentItem.avatarurl}}' class='avatarurl'></image>
+      <text>{{commentItem.nickName}}</text>
+    </view>
+    <view class='right'>
+      <view class='zan'>
+        <image src='/images/zan.png'></image>
+        <text style='color:gray'>{{commentItem.approve}}</text>
+      </view>
+      <view class='reply' style='margin:0 5rpx'>
+        <image src='/images/reply.png'></image>
+        <text style='color:gray'>{{commentItem.reply}}</text>
+      </view>
+    </view>
+  </view>
+</view>

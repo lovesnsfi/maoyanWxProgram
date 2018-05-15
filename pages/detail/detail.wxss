@@ -1,0 +1,97 @@
+.topTitle
+{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #e54847;
+  height: 80rpx;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 32rpx;
+}
+.movieItem
+{
+   height: 100%;
+   display: flex;
+   box-sizing: border-box;
+   padding: 15rpx;
+   background-repeat: no-repeat;
+   background-size:cover; 
+   background-color: rgba(0, 0, 0, 0.2);
+   position: relative;
+   color: white;
+}
+.movieItem .mask
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width:100%;
+  height: 100%;
+  z-index: -1
+}
+.mask image
+{
+  width: 100%;
+  height: 100%;
+  filter: blur(30px);
+  -webkit-filter: blur(30px);
+}
+
+.movieItem .left
+{
+    width: 220rpx;
+}
+.movieItem .left>image
+{
+    width:100%;
+    height: auto;
+}
+
+.movieItem .center
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin:10rpx; 
+    font-size: 26rpx;
+}
+.m_rating
+{
+  color: orange;
+}
+.section-expander
+{
+  padding: 15rpx;
+  box-sizing: border-box;
+}
+.buttonView
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #e54847;
+  color: white;
+  font-size: 30rpx;
+  margin: auto;
+  padding: 15rpx;
+  border-radius: 10rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.buttonViewHover
+{
+  font-weight: bold;
+}
+.m_desc
+{
+  font-size: 28rpx;
+  color: gray;
+}
+.m_title
+{
+  font-size: 36rpx;
+}

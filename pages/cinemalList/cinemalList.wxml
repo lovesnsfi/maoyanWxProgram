@@ -1,0 +1,9 @@
+<view class='header'>旭辉小区电影平台</view>
+<view class="cinemaList" wx:if="{{isShow}}">
+  <view class='areaList'>
+    <view class='{{areaName==item?"active":""}}' wx:for="{{areaList}}" wx:for-item="item" wx:key="index" bindtap='changeAreaList' data-areaname="{{item}}">{{item}}</view>
+  </view>
+  <view class='cinemaDiv'>
+    <cinemal-item wx:key="index" wx:for="{{cinemaList[areaName]}}" cinemaitem="{{item}}"></cinemal-item>
+  </view>
+</view>

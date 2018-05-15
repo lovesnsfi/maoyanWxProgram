@@ -1,0 +1,12 @@
+<view>
+  <view class='c_topTitle'>热评</view>
+  <!-- 评论的每一项-->
+  <view class='commentList'>
+    <commentItem wx:for="{{hcmts}}" wx:for-index="idx" wx:key="idx" wx:for-item="item" commentItem="{{item}}"></commentItem>
+  </view>
+  <view class='c_topTitle' style='margin-top:3rpx'>短评</view>
+  <!-- 评论的每一项-->
+  <view class='commentList'>
+    <commentItem wx:for="{{cmts}}" wx:for-index="idx" wx:key="idx" wx:for-item="item" commentItem="{{item}}"></commentItem>
+  </view>
+</view>

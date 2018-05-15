@@ -1,0 +1,65 @@
+.commentItem
+{
+  font-size: 24rpx;
+  border-bottom: 1px solid lightgray;
+}
+.commentItem .top
+{
+  display: flex;
+  flex-direction: row;
+  height: 50rpx;
+  font-size: 24rpx;
+  align-items: center;
+}
+.startImg
+{
+  width: 24rpx;
+  height: 24rpx;
+}
+.startImg+.startImg
+{
+  margin-left: 3rpx;
+}
+.commentItem .center
+{
+  font-size: 24rpx;
+}
+.commentItem .bottom
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10rpx 0;
+  justify-content: space-between
+  
+}
+.commentItem .bottom .left
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.commentItem .bottom .left .avatarurl
+{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+  margin: 0 10rpx 0 0;
+}
+.commentItem .bottom .right
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.commentItem .bottom .right image
+{
+  width: 40rpx;
+  height: 40rpx;
+}
+.zan,.reply
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

@@ -1,0 +1,31 @@
+<view wx:if="{{isShow}}">
+  <view class='topTitle'>
+    {{movieInfo.nm}}
+  </view>
+  <view class="movieItem">
+    <view class='mask'>
+      <image src='{{movieInfo.img}}'  mode='scaleToFill'>
+      </image>
+    </view>
+    <view class='left'>
+      <image src='{{movieInfo.img}}' mode='widthFix'></image>
+    </view>
+    <view class='center'>
+      <view class='m_title'>{{movieInfo.nm}}</view>
+      <view class='m_type'>{{movieInfo.cat}}</view>
+      <view class='m_rating'>评分：{{movieInfo.sc}}</view>
+      <view class='m_dir'>{{movieInfo.dir}}</view>
+      <view class='m_src'>{{movieInfo.src}}/{{movieInfo.dur}}分钟</view>
+      <view class='m_rt'>{{movieInfo.rt}}</view>
+    </view>
+  </view>
+  <view class='section-expander'>
+    <view class='buttonView' hover-class='buttonViewHover'>
+      立即购票
+    </view>
+    <view class='m_desc'>
+      {{movieInfo.dra}}
+    </view>
+  </view>
+  <detailComment hcmts="{{hcmts}}" cmts="{{cmts}}"></detailComment>
+</view>

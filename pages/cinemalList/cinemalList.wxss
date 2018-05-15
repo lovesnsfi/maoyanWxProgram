@@ -1,0 +1,46 @@
+.cinemaList
+{
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 70rpx; 
+    position: absolute;
+    width: 100%;
+}
+.areaList
+{
+    width:165rpx;
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    left:0px;
+    border-right:1px solid gray;
+    overflow-y: auto;
+}
+.areaList::-webkit-scrollbar   /*不兼容IE与火狐*/
+{
+    display: none;
+}
+.areaList >view
+{
+    height: 60rpx;
+    text-align: center;
+    line-height: 60rpx;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+    font-size: 12px;
+}
+.areaList view.active
+{
+    color: #E54847;
+    font-weight: bold;
+}
+.cinemaDiv
+{
+    position: absolute;
+    left: 165rpx;
+    top: 0px;
+    bottom: 0px;
+    right:-19px;
+    overflow-y: auto; 
+}

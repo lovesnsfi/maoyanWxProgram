@@ -1,0 +1,8 @@
+<view class='cinemaItem'>
+  <view class='c_nm'>{{cinemaitem.nm}}</view>
+  <view class='c_addr'>{{cinemaitem.addr}}</view>
+  <view class='c_mark'>
+    <view class='d3'>座</view>
+    <view class='imax'>IMAX</view>
+  </view>
+</view>

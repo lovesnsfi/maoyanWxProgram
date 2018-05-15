@@ -1,0 +1,12 @@
+<!--电影信息的列表 -->
+<view style='width:100%;height:100%'>
+  <scroll-view  scroll-y="true" bindscrolltolower="getNextPage" style='width:100%;height:100%;'>
+    <view class='header'>旭辉小区电影平台</view>
+    <view class='movieList'>
+      <movie-item wx:for="{{movieList}}" wx:key="index" item="{{item}}"></movie-item>
+    </view>
+  </scroll-view>
+  <view class='reload' bindtap='reload'>
+    <image src='/images/reload.png' mode='widthFix'></image>
+  </view>
+</view>

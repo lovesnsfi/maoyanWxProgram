@@ -1,0 +1,18 @@
+.c_topTitle
+{
+  font-size: 30rpx;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 20rpx;
+  color: #808080;
+}
+.commentList
+{
+  box-sizing: border-box;
+  padding: 15rpx;
+}

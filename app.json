@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/movieList/movieList",
+    "pages/cinemalList/cinemalList",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "旭辉电影平台",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/movieList/movieList",
+        "text": "影片",
+        "iconPath": "/images/movie.png",
+        "selectedIconPath": "/images/movie_active.png"
+      },
+      {
+        "pagePath": "pages/cinemalList/cinemalList",
+        "text": "影院",
+        "iconPath": "/images/cinemal.png",
+        "selectedIconPath": "/images/cinemal_active.png"
+      }
+    ]
+  }
+}
